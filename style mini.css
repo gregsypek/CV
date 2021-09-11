@@ -7,7 +7,6 @@ body {
 	--bg-color: #f8f8f8;
 	--shade-color: #e5e5e5;
 	--font: "Poppins", sans-serif;
-	font-size: 62.5%;
 	background-color: var(--bg-color);
 	font-family: var(--font);
 }
@@ -15,23 +14,23 @@ body {
 .wrapper {
 	position: relative;
 	display: flex;
-	gap: 5rem;
-	width: 59.5rem;
-	height: 84.2rem;
-	margin: 1rem auto;
+	gap: 50px;
+	width: 595px;
+	height: 842px;
+	margin: 5rem auto;
 	/* border: 1px solid black; */
 }
 
 .left {
-	flex-basis: 23.3rem;
-	margin-left: 1.5rem;
+	flex-basis: 233px;
+	margin-left: 15px;
 	height: 100%;
 	background-color: var(--shade-color);
 	/* border: 1px solid orangered; */
 }
 .box,
 .avatar {
-	margin: 0 1.5rem;
+	margin: 0 15px;
 }
 .col {
 	width: 100%;
@@ -41,19 +40,19 @@ body {
 }
 .right {
 	flex: 1;
-	margin-right: 1.5rem;
+	margin-right: 15px;
 }
 
 h1.title {
-	font-size: 1.8rem;
+	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: 600;
-	margin: 1.1rem 0;
+	margin: 11px 0;
 }
 img {
 	display: block;
 	width: 100%;
-	height: 12.6rem;
+	height: 126px;
 	object-fit: cover;
 	filter: brightness(1.3);
 	/* object-position: top center; */
@@ -65,10 +64,10 @@ img {
 	/* width: 185px; */
 	width: 100%;
 	text-transform: uppercase;
-	font-size: 1.3rem;
+	font-size: 13px;
 	font-weight: 600;
-	line-height: 1.9rem;
-	margin: 2rem auto;
+	line-height: 19px;
+	margin: 20px auto;
 }
 .header-color {
 	background-color: var(--shade-color);
@@ -79,13 +78,12 @@ img {
 .header-white h3,
 .header-color h3 {
 	display: inline-block;
-	margin-left: 0.5rem;
+	margin-left: 5px;
 }
 .title {
-	font-size: 1.1rem;
-	line-height: 1.5rem;
+	font-size: 11px;
+	line-height: 15px;
 	letter-spacing: -0.02em;
-	margin: 1.5rem 0;
 	text-transform: none;
 	font-weight: 400;
 }
@@ -100,7 +98,7 @@ address {
 }
 .title h4 {
 	margin: 5px 0;
-	font-size: 1.2rem;
+	font-size: 12px;
 	font-weight: 500;
 	letter-spacing: -0.03em;
 	text-transform: lowercase;
@@ -108,7 +106,7 @@ address {
 
 p,
 li {
-	font-size: 1.1rem;
+	font-size: 11px;
 	font-weight: 400;
 }
 
@@ -119,10 +117,10 @@ ul {
 /* RIGHT */
 
 h2 {
-	font-size: 1.1rem;
-	line-height: 1.6rem;
+	font-size: 11px;
+	line-height: 16px;
 	font-weight: 400;
-	margin: 1.5rem 0;
+	margin: 15px 0;
 }
 
 footer {
@@ -132,22 +130,21 @@ footer {
 	right: 10px;
 }
 blockquote {
-	font-size: 0.8rem;
-	margin: 0.2rem 1.5rem;
+	font-size: 8px;
 }
 
 .project h4 {
-	font-size: 1.1rem;
+	font-size: 11px;
 	font-weight: 600;
 	letter-spacing: -0.02em;
-	line-height: 2rem;
+	line-height: 10px;
 }
 .project a {
-	font-size: 0.9rem;
-	padding: 1.5rem 0;
+	font-size: 9px;
+	padding: 15px 0;
 }
 .project p {
-	font-size: 1rem;
-	margin-bottom: 1.5rem;
-	margin-top: 0.5rem;
+	font-size: 10px;
+	margin-bottom: 15px;
+	margin-top: 5px;
 }
