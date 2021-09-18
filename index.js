@@ -2,6 +2,7 @@ const fs = require("fs");
 const http = require("http");
 const url = require("url");
 const replaceTemplate = require("./modules/replaceTemplate");
+const replaceTemplateProjects = require("./modules/replaceTemplateProjects");
 const path = require("path");
 ////Server
 
@@ -13,24 +14,38 @@ const tempLang = fs.readFileSync(
 	`${__dirname}/templates/template-lang.html`,
 	"utf-8"
 );
+const tempProjects = fs.readFileSync(
+	`${__dirname}/templates/template-projects.html`,
+	"utf-8"
+);
 
-const data = fs.readFileSync(
+const personalData = fs.readFileSync(
 	`${__dirname}/dev-data/personal_data.json`,
 	"utf-8"
 );
-const dataObj = JSON.parse(data);
+const projectsData = fs.readFileSync(
+	`${__dirname}/dev-data/projects.json`,
+	"utf-8"
+);
+
+const personalDataObj = JSON.parse(personalData);
+const projectsDataObj = JSON.parse(projectsData);
 
 const server = http.createServer((req, res) => {
 	const { pathname } = url.parse(req.url, true);
-	const langHtml = dataObj.languages;
+	const langHtml = personalDataObj.languages;
 	const langList = langHtml.map((el) => replaceTemplate(tempLang, el)).join("");
 	const tempLeft = tempOverview.replace("{%LANGUAGES%}", langList);
+	const projectHtml = projectsDataObj
+		.map((el) => replaceTemplateProjects(tempProjects, el))
+		.join("");
+
 	if (pathname === "/") {
-		// console.log(langHtml);
 		res.writeHead(200, {
 			"Content-type": "text/html",
 		});
-		let output = replaceTemplate(tempLeft, dataObj);
+		let output = replaceTemplate(tempLeft, personalDataObj);
+		output = output.replace("{%PROJECTS%}", projectHtml);
 		res.end(output);
 	} else if (req.url.match(".png$")) {
 		const imagePath = path.join(__dirname, "public", req.url);
