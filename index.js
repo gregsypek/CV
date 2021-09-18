@@ -1,19 +1,37 @@
 const fs = require("fs");
 const http = require("http");
 const url = require("url");
-const slugify = require("slugify");
+const replaceTemplate = require("./modules/replaceTemplate");
 
 ////Server
 
-const template = fs.readFileSync(`${__dirname}/templates/`);
+const tempOverview = fs.readFileSync(
+	`${__dirname}/templates/template-overview.html`,
+	"utf-8"
+);
+const tempLang = fs.readFileSync(
+	`${__dirname}/templates/template-lang.html`,
+	"utf-8"
+);
+
+const data = fs.readFileSync(
+	`${__dirname}/dev-data/personal_data.json`,
+	"utf-8"
+);
+const dataObj = JSON.parse(data);
 
 const server = http.createServer((req, res) => {
-	const { query, pathname } = url.parse(req.url, true);
-
+	const { pathname } = url.parse(req.url, true);
+	const langHtml = dataObj.languages;
+	const langList = langHtml.map((el) => replaceTemplate(tempLang, el)).join("");
+	const tempLeft = tempOverview.replace("{%LANGUAGES%}", langList);
 	if (pathname === "/") {
+		console.log(langHtml);
 		res.writeHead(200, {
 			"Content-type": "text/html",
 		});
+		let output = replaceTemplate(tempLeft, dataObj);
+		res.end(output);
 	} else {
 		res.writeHead(404, {
 			"Content-type": "text/html",
