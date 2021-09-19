@@ -34,17 +34,27 @@
 			.wrapper {
 				position: relative;
 				display: flex;
-				gap: 5rem;
+				gap: 4rem;
 				width: 794px;
-				height: 1030px;
+				height: 1090px;
 				margin: 0 auto;
-				padding: 1rem;
+				/* padding: 2rem 0; */
 				/* border: 1px solid black; */
 			}
 
+			a:link,
+			a:visited {
+				padding: 0.1rem;
+				border: 1px solid transparent;
+			}
+			a:hover,
+			a:active {
+				border: 1px solid black;
+			}
 			.left {
+				margin-top: 1.5rem;
 				flex-basis: 23.3rem;
-				margin-left: 1.5rem;
+				margin-left: 2rem;
 				height: 100%;
 				background-color: var(--shade-color);
 				/* border: 1px solid orangered; */
@@ -61,7 +71,8 @@
 			}
 			.right {
 				flex: 1;
-				margin-right: 1.5rem;
+				margin-right: 2.5rem;
+				padding-top: 1.5rem;
 			}
 
 			h1.title {
@@ -165,7 +176,7 @@
 			}
 			.project a {
 				font-size: 0.9rem;
-				padding: 1.5rem 0;
+				/* padding: 1.5rem 0; */
 			}
 			.project p {
 				font-size: 1rem;
@@ -193,7 +204,7 @@
 						</div>
 						<div class="title phone">
 							<h4>numer telefonu</h4>
-							<p>{%PHONE%}</p>
+							<a href="tel:+48{%PHONE%}">{%PHONE%}</a>
 						</div>
 						<div class="title github">
 							<h4>github</h4>
@@ -205,7 +216,7 @@
 						</div>
 						<div class="title email">
 							<h4>email</h4>
-							<a href="{%EMAIL%}">{%EMAIL%}</a>
+							<a href="mailto:{%EMAIL%}">{%EMAIL%}</a>
 						</div>
 					</div>
 					<div class="box skills">
