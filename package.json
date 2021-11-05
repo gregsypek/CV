@@ -1,0 +1,22 @@
+{
+	"name": "cv",
+	"version": "1.0.0",
+	"description": "template for my cv",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gregsypek/CV.git"
+	},
+	"author": "gregsypek",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/gregsypek/CV/issues"
+	},
+	"homepage": "https://github.com/gregsypek/CV#readme",
+	"devDependencies": {
+		"nodemon": "^2.0.12"
+	}
+}
