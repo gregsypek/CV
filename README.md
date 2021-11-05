@@ -7,9 +7,3 @@ A simple one-page website is formatted in CSS for easily print in A4 format.
 - HTML Template,
 - simple API,
 - and modules from Node.
-
-### Instalation
-
-```
-npm run start
-```
