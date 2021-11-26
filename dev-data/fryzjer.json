@@ -1,0 +1,11 @@
+{
+	"name": "Joanna Sypek",
+	"photo": "./me.png",
+	"address": "Trzciana 455A 39-304 Mielec",
+	"phone": "500743122",
+	"ur": "07.10.1988",
+	"email": "asiasypek27@gmail.com",
+	"skills": "prawo jazdy kategoria B",
+	"languages": [{ "type": "angielski", "level": "A2" }],
+	"info": "Ukończyłam szkołę fryzjerską z dyplomem czeladnika. Bardzo chciałabym zacząć pracę w tym zawodzie, ponieważ lubie modelować i układać włosy. Mogę pochwalić się strzyżeniem, które regularnie wykonuje na najblizszych w rodzinie. Jestem osobą optymistycznie nastawioną do życia, co ułatwia mi utrzymywanie pozytywnych relacji z ludźmi. Swoje zadania wykonuje dokładnie i jestem otwarta na nowe wyzwania."
+}
