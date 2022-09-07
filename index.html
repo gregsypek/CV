@@ -147,15 +147,15 @@
 			/* RIGHT */
 
 			h2 {
-				font-size: 1.1rem;
+				font-size: 1rem;
 				line-height: 1.6rem;
 				font-weight: 400;
-				margin: 1.5rem 0;
+				margin: 0 0 1.5rem 0;
 			}
 
 			footer {
 				position: absolute;
-				bottom: 0rem;
+				bottom: -1rem;
 				left: 2.5rem;
 				right: 1rem;
 			}
@@ -164,12 +164,22 @@
 				margin: 0.2rem 1.5rem;
 				line-height: 1.2rem;
 			}
+			.project__box {
+				display: flex;
+				margin-right: 1.5rem;
+				justify-content: space-between;
+				border-bottom: 1px solid var(--shade-color);
+			}
+			.project__icons {
+				display: flex;
+				place-items: center;
+			}
 
 			.project h4 {
 				font-size: 1.1rem;
 				font-weight: 500;
 				letter-spacing: -0.02em;
-				line-height: 2rem;
+				line-height: 1.8rem;
 			}
 			.project a {
 				font-size: 0.9rem;
@@ -180,6 +190,15 @@
 				margin-bottom: 1.4rem;
 				margin-top: 0.5rem;
 				line-height: 1.6rem;
+			}
+			.skills {
+				display: block;
+				margin-block: 0.2rem;
+			}
+			.skills small {
+				padding: 0 0.3rem;
+				margin-right: 0.5rem;
+				background-color: rgb(229 229 229 / 50%);
 			}
 		</style>
 	</head>
@@ -197,11 +216,11 @@
 						</header>
 						<div class="title address">
 							<h4>adres</h4>
-							<address>Mielec</address>
+							<address>Mielec, woj.podkarpackie</address>
 						</div>
 						<div class="title phone">
 							<h4>numer telefonu</h4>
-							<a href="#">#######</a>
+							<a href="#">########</a>
 						</div>
 						<div class="title github">
 							<h4>github</h4>
@@ -227,11 +246,10 @@
 						<p>
 							Tworzenie aplikacji oraz stron internetowych w oparciu o
 							JavaScript, HTML5, SCSS lub Bootstrap. Dobra znajomość React,
-							który wykorzystywałem do pisania własnych projektów. Robiłem też
-							projekty w Wordpressie od podstaw bez użycia gotowych motywów dla
-							zewnętrznej firmy na umowie zlecenie. Znam PHP oraz relacyjne bazy
-							danych, które mogę poprzeć dyplomem ukończenia kursu
-							technik-informatyk. Pracowałem z wykorzystaniem Gita, Redmine oraz
+							który wykorzystywałem do pisania własnych projektów. Znam PHP oraz
+							relacyjne bazy danych. Robiłem też projekty w Wordpressie od
+							podstaw bez użycia gotowych motywów dla zewnętrznej firmy na
+							umowie zlecenie. Pracowałem z wykorzystaniem Gita, Redmine oraz
 							AzureDevOps. Uwielbiam równiez projektować layouty w Figmie.
 						</p>
 					</div>
@@ -242,6 +260,7 @@
 						</header>
 						<ul>
 							<li>angielski - <span>B2</span></li>
+							<li>rosyjski - <span>A2</span></li>
 						</ul>
 					</div>
 				</div>
@@ -256,64 +275,362 @@
 					wykształcenie oraz znam jezyk angielski w stopniu
 					średniozaawansowanym.
 				</h2>
+
+				<div class="projects">
+					<header class="header header-color">
+						<h3>Doświadczenie</h3>
+					</header>
+					<article class="project">
+						<h4>ZETO-RZESZÓW sp. z o.o.</h4>
+						<span class="link">kwiecien 2022 - wrzesień 2022</span>
+						<small style="display: block"
+							>młodszy programista aplikacji - Vue, NuxtJS</small
+						>
+					</article>
+					<article class="project">
+						<h4>PERBIS-DĘBICA</h4>
+						<span class="link">styczeń 2022 - luty 2022</span>
+						<small style="display: block"
+							>programista aplikacji - Wordpress</small
+						>
+					</article>
+				</div>
 				<div class="projects">
 					<header class="header header-color">
 						<h3>Projekty</h3>
 					</header>
+					<!-- mjurkowska -->
 					<article class="project">
-						<h4>schody zaliński</h4>
+						<div class="project__box">
+							<div class="project__title">
+								<h4>mjurkowska</h4>
+							</div>
+							<div class="project__icons">
+								<a href="https://github.com/gregsypek/MJurkowska">
+									<svg
+										width="15"
+										height="15"
+										viewBox="0 0 25 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M12.5 0C5.59375 0 0 5.73524 0 12.8162C0 18.4873 3.57812 23.2774 8.54687 24.9755C9.17187 25.0877 9.40625 24.7032 9.40625 24.3667C9.40625 24.0624 9.39062 23.0531 9.39062 21.9797C6.25 22.5725 5.4375 21.1947 5.1875 20.4738C5.04687 20.1054 4.4375 18.9679 3.90625 18.6636C3.46875 18.4232 2.84375 17.8305 3.89062 17.8145C4.875 17.7985 5.57812 18.7437 5.8125 19.1281C6.9375 21.0666 8.73437 20.5219 9.45312 20.1855C9.5625 19.3524 9.89062 18.7917 10.25 18.4713C7.46875 18.1509 4.5625 17.0455 4.5625 12.1433C4.5625 10.7496 5.04687 9.59611 5.84375 8.69898C5.71875 8.37857 5.28125 7.06492 5.96875 5.30269C5.96875 5.30269 7.01562 4.96627 9.40625 6.61635C10.4062 6.32799 11.4687 6.1838 12.5312 6.1838C13.5937 6.1838 14.6562 6.32799 15.6562 6.61635C18.0469 4.95025 19.0937 5.30269 19.0937 5.30269C19.7812 7.06492 19.3438 8.37857 19.2188 8.69898C20.0156 9.59611 20.5 10.7335 20.5 12.1433C20.5 17.0615 17.5781 18.1509 14.7969 18.4713C15.25 18.8718 15.6406 19.6408 15.6406 20.8423C15.6406 22.5565 15.625 23.9342 15.625 24.3667C15.625 24.7032 15.8594 25.1037 16.4844 24.9755C18.9658 24.1165 21.1221 22.4814 22.6496 20.3001C24.1772 18.1189 24.9993 15.5015 25 12.8162C25 5.73524 19.4062 0 12.5 0Z"
+											fill="#838080f3"
+										/>
+									</svg>
+								</a>
+								<a href="https://gregsypek.github.io/MJurkowska/"
+									><svg
+										width="25"
+										height="15"
+										viewBox="0 0 35 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M17.045 17.0455C19.5554 17.0455 21.5904 15.0104 21.5904 12.5C21.5904 9.98966 19.5554 7.95459 17.045 7.95459C14.5346 7.95459 12.4995 9.98966 12.4995 12.5C12.4995 15.0104 14.5346 17.0455 17.045 17.0455Z"
+											fill="white"
+										/>
+										<path
+											d="M34.0222 12.1136C32.6857 8.65642 30.3654 5.66661 27.3481 3.51373C24.3309 1.36086 20.7489 0.139287 17.045 0C13.341 0.139287 9.75905 1.36086 6.74179 3.51373C3.72453 5.66661 1.40424 8.65642 0.0676984 12.1136C-0.0225661 12.3633 -0.0225661 12.6367 0.0676984 12.8864C1.40424 16.3436 3.72453 19.3334 6.74179 21.4863C9.75905 23.6391 13.341 24.8607 17.045 25C20.7489 24.8607 24.3309 23.6391 27.3481 21.4863C30.3654 19.3334 32.6857 16.3436 34.0222 12.8864C34.1125 12.6367 34.1125 12.3633 34.0222 12.1136V12.1136ZM17.045 19.8864C15.5841 19.8864 14.156 19.4532 12.9413 18.6415C11.7266 17.8299 10.7799 16.6763 10.2209 15.3266C9.6618 13.977 9.51553 12.4918 9.80053 11.059C10.0855 9.62618 10.789 8.31005 11.822 7.27705C12.855 6.24405 14.1711 5.54057 15.604 5.25556C17.0368 4.97056 18.5219 5.11683 19.8716 5.67589C21.2213 6.23495 22.3749 7.18168 23.1865 8.39636C23.9981 9.61104 24.4313 11.0391 24.4313 12.5C24.4283 14.4581 23.6492 16.3351 22.2646 17.7196C20.88 19.1042 19.003 19.8834 17.045 19.8864V19.8864Z"
+											fill="#838080f3"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<a href="https://gregsypek.github.io/MJurkowska/" class="link"
+							>https://gregsypek.github.io/MJurkowska/</a
+						>
+						<span class="skills"
+							><small>HTML</small><small>JavaScirpt</small>
+							<small>CSS</small></span
+						>
+						<!-- <p>
+							Strona zrobiona bez uźycia zewnetrznych frameworków.
+						</p> -->
+					</article>
+					<!-- weather -->
+					<article class="project">
+						<div class="project__box">
+							<div class="project__title">
+								<h4>weatherapp</h4>
+							</div>
+							<div class="project__icons">
+								<a href="https://github.com/gregsypek/weatherApp">
+									<svg
+										width="15"
+										height="15"
+										viewBox="0 0 25 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M12.5 0C5.59375 0 0 5.73524 0 12.8162C0 18.4873 3.57812 23.2774 8.54687 24.9755C9.17187 25.0877 9.40625 24.7032 9.40625 24.3667C9.40625 24.0624 9.39062 23.0531 9.39062 21.9797C6.25 22.5725 5.4375 21.1947 5.1875 20.4738C5.04687 20.1054 4.4375 18.9679 3.90625 18.6636C3.46875 18.4232 2.84375 17.8305 3.89062 17.8145C4.875 17.7985 5.57812 18.7437 5.8125 19.1281C6.9375 21.0666 8.73437 20.5219 9.45312 20.1855C9.5625 19.3524 9.89062 18.7917 10.25 18.4713C7.46875 18.1509 4.5625 17.0455 4.5625 12.1433C4.5625 10.7496 5.04687 9.59611 5.84375 8.69898C5.71875 8.37857 5.28125 7.06492 5.96875 5.30269C5.96875 5.30269 7.01562 4.96627 9.40625 6.61635C10.4062 6.32799 11.4687 6.1838 12.5312 6.1838C13.5937 6.1838 14.6562 6.32799 15.6562 6.61635C18.0469 4.95025 19.0937 5.30269 19.0937 5.30269C19.7812 7.06492 19.3438 8.37857 19.2188 8.69898C20.0156 9.59611 20.5 10.7335 20.5 12.1433C20.5 17.0615 17.5781 18.1509 14.7969 18.4713C15.25 18.8718 15.6406 19.6408 15.6406 20.8423C15.6406 22.5565 15.625 23.9342 15.625 24.3667C15.625 24.7032 15.8594 25.1037 16.4844 24.9755C18.9658 24.1165 21.1221 22.4814 22.6496 20.3001C24.1772 18.1189 24.9993 15.5015 25 12.8162C25 5.73524 19.4062 0 12.5 0Z"
+											fill="#838080f3"
+										/>
+									</svg>
+								</a>
+								<a href="https://weather123vue.herokuapp.com/"
+									><svg
+										width="25"
+										height="15"
+										viewBox="0 0 35 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M17.045 17.0455C19.5554 17.0455 21.5904 15.0104 21.5904 12.5C21.5904 9.98966 19.5554 7.95459 17.045 7.95459C14.5346 7.95459 12.4995 9.98966 12.4995 12.5C12.4995 15.0104 14.5346 17.0455 17.045 17.0455Z"
+											fill="white"
+										/>
+										<path
+											d="M34.0222 12.1136C32.6857 8.65642 30.3654 5.66661 27.3481 3.51373C24.3309 1.36086 20.7489 0.139287 17.045 0C13.341 0.139287 9.75905 1.36086 6.74179 3.51373C3.72453 5.66661 1.40424 8.65642 0.0676984 12.1136C-0.0225661 12.3633 -0.0225661 12.6367 0.0676984 12.8864C1.40424 16.3436 3.72453 19.3334 6.74179 21.4863C9.75905 23.6391 13.341 24.8607 17.045 25C20.7489 24.8607 24.3309 23.6391 27.3481 21.4863C30.3654 19.3334 32.6857 16.3436 34.0222 12.8864C34.1125 12.6367 34.1125 12.3633 34.0222 12.1136V12.1136ZM17.045 19.8864C15.5841 19.8864 14.156 19.4532 12.9413 18.6415C11.7266 17.8299 10.7799 16.6763 10.2209 15.3266C9.6618 13.977 9.51553 12.4918 9.80053 11.059C10.0855 9.62618 10.789 8.31005 11.822 7.27705C12.855 6.24405 14.1711 5.54057 15.604 5.25556C17.0368 4.97056 18.5219 5.11683 19.8716 5.67589C21.2213 6.23495 22.3749 7.18168 23.1865 8.39636C23.9981 9.61104 24.4313 11.0391 24.4313 12.5C24.4283 14.4581 23.6492 16.3351 22.2646 17.7196C20.88 19.1042 19.003 19.8834 17.045 19.8864V19.8864Z"
+											fill="#838080f3"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<a href="https://weather123vue.herokuapp.com/" class="link"
+							>https://weather123vue.herokuapp.com/</a
+						>
+						<span class="skills"><small>Vue</small><small>Nuxt</small> </span>
+						<!-- <p>
+							Strona zrobiona bez uźycia zewnetrznych frameworków.
+						</p>  -->
+					</article>
+					<article class="project">
+						<div class="project__box">
+							<div class="project__title">
+								<h4>schody zaliński</h4>
+							</div>
+							<div class="project__icons">
+								<a href="https://github.com/gregsypek/carpentry2">
+									<svg
+										width="15"
+										height="15"
+										viewBox="0 0 25 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M12.5 0C5.59375 0 0 5.73524 0 12.8162C0 18.4873 3.57812 23.2774 8.54687 24.9755C9.17187 25.0877 9.40625 24.7032 9.40625 24.3667C9.40625 24.0624 9.39062 23.0531 9.39062 21.9797C6.25 22.5725 5.4375 21.1947 5.1875 20.4738C5.04687 20.1054 4.4375 18.9679 3.90625 18.6636C3.46875 18.4232 2.84375 17.8305 3.89062 17.8145C4.875 17.7985 5.57812 18.7437 5.8125 19.1281C6.9375 21.0666 8.73437 20.5219 9.45312 20.1855C9.5625 19.3524 9.89062 18.7917 10.25 18.4713C7.46875 18.1509 4.5625 17.0455 4.5625 12.1433C4.5625 10.7496 5.04687 9.59611 5.84375 8.69898C5.71875 8.37857 5.28125 7.06492 5.96875 5.30269C5.96875 5.30269 7.01562 4.96627 9.40625 6.61635C10.4062 6.32799 11.4687 6.1838 12.5312 6.1838C13.5937 6.1838 14.6562 6.32799 15.6562 6.61635C18.0469 4.95025 19.0937 5.30269 19.0937 5.30269C19.7812 7.06492 19.3438 8.37857 19.2188 8.69898C20.0156 9.59611 20.5 10.7335 20.5 12.1433C20.5 17.0615 17.5781 18.1509 14.7969 18.4713C15.25 18.8718 15.6406 19.6408 15.6406 20.8423C15.6406 22.5565 15.625 23.9342 15.625 24.3667C15.625 24.7032 15.8594 25.1037 16.4844 24.9755C18.9658 24.1165 21.1221 22.4814 22.6496 20.3001C24.1772 18.1189 24.9993 15.5015 25 12.8162C25 5.73524 19.4062 0 12.5 0Z"
+											fill="#838080f3"
+										/>
+									</svg>
+								</a>
+								<a href="https://schodyzalinski.herokuapp.com/"
+									><svg
+										width="25"
+										height="15"
+										viewBox="0 0 35 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M17.045 17.0455C19.5554 17.0455 21.5904 15.0104 21.5904 12.5C21.5904 9.98966 19.5554 7.95459 17.045 7.95459C14.5346 7.95459 12.4995 9.98966 12.4995 12.5C12.4995 15.0104 14.5346 17.0455 17.045 17.0455Z"
+											fill="white"
+										/>
+										<path
+											d="M34.0222 12.1136C32.6857 8.65642 30.3654 5.66661 27.3481 3.51373C24.3309 1.36086 20.7489 0.139287 17.045 0C13.341 0.139287 9.75905 1.36086 6.74179 3.51373C3.72453 5.66661 1.40424 8.65642 0.0676984 12.1136C-0.0225661 12.3633 -0.0225661 12.6367 0.0676984 12.8864C1.40424 16.3436 3.72453 19.3334 6.74179 21.4863C9.75905 23.6391 13.341 24.8607 17.045 25C20.7489 24.8607 24.3309 23.6391 27.3481 21.4863C30.3654 19.3334 32.6857 16.3436 34.0222 12.8864C34.1125 12.6367 34.1125 12.3633 34.0222 12.1136V12.1136ZM17.045 19.8864C15.5841 19.8864 14.156 19.4532 12.9413 18.6415C11.7266 17.8299 10.7799 16.6763 10.2209 15.3266C9.6618 13.977 9.51553 12.4918 9.80053 11.059C10.0855 9.62618 10.789 8.31005 11.822 7.27705C12.855 6.24405 14.1711 5.54057 15.604 5.25556C17.0368 4.97056 18.5219 5.11683 19.8716 5.67589C21.2213 6.23495 22.3749 7.18168 23.1865 8.39636C23.9981 9.61104 24.4313 11.0391 24.4313 12.5C24.4283 14.4581 23.6492 16.3351 22.2646 17.7196C20.88 19.1042 19.003 19.8834 17.045 19.8864V19.8864Z"
+											fill="#838080f3"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
 						<a href="https://schodyzalinski.herokuapp.com/" class="link"
 							>https://schodyzalinski.herokuapp.com/</a
 						>
-						<p>
-							Strona zrobiona dla klienta (https://schodyzalinski.pl), łącznie z
-							designem oraz treściami. Zbudowana z użyciem Node, Express,
-							MongoDB, Pug, oraz Mongoose. W pełni responsywna i bezpieczna w
-							oparciu o autoryzacje przy użyciu JWT oraz RESTful APIs. Pozwala
-							na operacje CRUD na bazie danych po zalogowaniu się do panelu
-							administracyjnego: (https://schodyzalinski.herokuapp.com/login)
-							login: 'stas@gmail.com', hasło: 'pass1234'
-						</p>
+						<span class="skills"
+							><small>Node</small><small>Express</small><small>MongoDB</small
+							><small>Mongoose</small><small>Pug</small>
+						</span>
+
+						<!-- <p>
+							Strona zrobiona dla klienta, łącznie z designem oraz treściami.
+						</p> -->
 					</article>
 					<article class="project">
-						<h4>pasieka miodek</h4>
+						<div class="project__box">
+							<div class="project__title">
+								<h4>pasieka miodek</h4>
+							</div>
+							<div class="project__icons">
+								<a href="https://github.com/gregsypek/honey">
+									<svg
+										width="15"
+										height="15"
+										viewBox="0 0 25 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M12.5 0C5.59375 0 0 5.73524 0 12.8162C0 18.4873 3.57812 23.2774 8.54687 24.9755C9.17187 25.0877 9.40625 24.7032 9.40625 24.3667C9.40625 24.0624 9.39062 23.0531 9.39062 21.9797C6.25 22.5725 5.4375 21.1947 5.1875 20.4738C5.04687 20.1054 4.4375 18.9679 3.90625 18.6636C3.46875 18.4232 2.84375 17.8305 3.89062 17.8145C4.875 17.7985 5.57812 18.7437 5.8125 19.1281C6.9375 21.0666 8.73437 20.5219 9.45312 20.1855C9.5625 19.3524 9.89062 18.7917 10.25 18.4713C7.46875 18.1509 4.5625 17.0455 4.5625 12.1433C4.5625 10.7496 5.04687 9.59611 5.84375 8.69898C5.71875 8.37857 5.28125 7.06492 5.96875 5.30269C5.96875 5.30269 7.01562 4.96627 9.40625 6.61635C10.4062 6.32799 11.4687 6.1838 12.5312 6.1838C13.5937 6.1838 14.6562 6.32799 15.6562 6.61635C18.0469 4.95025 19.0937 5.30269 19.0937 5.30269C19.7812 7.06492 19.3438 8.37857 19.2188 8.69898C20.0156 9.59611 20.5 10.7335 20.5 12.1433C20.5 17.0615 17.5781 18.1509 14.7969 18.4713C15.25 18.8718 15.6406 19.6408 15.6406 20.8423C15.6406 22.5565 15.625 23.9342 15.625 24.3667C15.625 24.7032 15.8594 25.1037 16.4844 24.9755C18.9658 24.1165 21.1221 22.4814 22.6496 20.3001C24.1772 18.1189 24.9993 15.5015 25 12.8162C25 5.73524 19.4062 0 12.5 0Z"
+											fill="#838080f3"
+										/>
+									</svg>
+								</a>
+								<a href="https://pasieka2.netlify.app/"
+									><svg
+										width="25"
+										height="15"
+										viewBox="0 0 35 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M17.045 17.0455C19.5554 17.0455 21.5904 15.0104 21.5904 12.5C21.5904 9.98966 19.5554 7.95459 17.045 7.95459C14.5346 7.95459 12.4995 9.98966 12.4995 12.5C12.4995 15.0104 14.5346 17.0455 17.045 17.0455Z"
+											fill="white"
+										/>
+										<path
+											d="M34.0222 12.1136C32.6857 8.65642 30.3654 5.66661 27.3481 3.51373C24.3309 1.36086 20.7489 0.139287 17.045 0C13.341 0.139287 9.75905 1.36086 6.74179 3.51373C3.72453 5.66661 1.40424 8.65642 0.0676984 12.1136C-0.0225661 12.3633 -0.0225661 12.6367 0.0676984 12.8864C1.40424 16.3436 3.72453 19.3334 6.74179 21.4863C9.75905 23.6391 13.341 24.8607 17.045 25C20.7489 24.8607 24.3309 23.6391 27.3481 21.4863C30.3654 19.3334 32.6857 16.3436 34.0222 12.8864C34.1125 12.6367 34.1125 12.3633 34.0222 12.1136V12.1136ZM17.045 19.8864C15.5841 19.8864 14.156 19.4532 12.9413 18.6415C11.7266 17.8299 10.7799 16.6763 10.2209 15.3266C9.6618 13.977 9.51553 12.4918 9.80053 11.059C10.0855 9.62618 10.789 8.31005 11.822 7.27705C12.855 6.24405 14.1711 5.54057 15.604 5.25556C17.0368 4.97056 18.5219 5.11683 19.8716 5.67589C21.2213 6.23495 22.3749 7.18168 23.1865 8.39636C23.9981 9.61104 24.4313 11.0391 24.4313 12.5C24.4283 14.4581 23.6492 16.3351 22.2646 17.7196C20.88 19.1042 19.003 19.8834 17.045 19.8864V19.8864Z"
+											fill="#838080f3"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
 						<a href="https://pasieka2.netlify.app/" class="link"
 							>https://pasieka2.netlify.app/</a
 						>
-						<p>
-							Strona budowana dla klienta składająca się z 19 podstron. Napisana
-							z użyciem technik poprawiających szybkość ładowania strony jak
-							‘lazy loading images’. Jest w pełni responsywna, zawiera 'slider
-							components', mapę z lokalizacją firmy, animacje w oparciu o
-							'Intersection Observer', oraz responsywne tabele, a także
-							'hamburger slider' napisany bez użycia javascript. Jest też
-							technologia BEM w połączeniu z SCSS.
-						</p>
+						<span class="skills"
+							><small>HTML</small><small>JavaScirpt</small><small>SCSS</small
+							><small>BEM</small>
+						</span>
+						<!-- <p>
+							Duzy projekt dla prawdziwej firmy z animacjami
+						</p> -->
 					</article>
 					<article class="project">
-						<h4>wordsapp</h4>
+						<div class="project__box">
+							<div class="project__title">
+								<h4>wordsapp</h4>
+							</div>
+							<div class="project__icons">
+								<a href="https://github.com/gregsypek/wordsApp2">
+									<svg
+										width="15"
+										height="15"
+										viewBox="0 0 25 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M12.5 0C5.59375 0 0 5.73524 0 12.8162C0 18.4873 3.57812 23.2774 8.54687 24.9755C9.17187 25.0877 9.40625 24.7032 9.40625 24.3667C9.40625 24.0624 9.39062 23.0531 9.39062 21.9797C6.25 22.5725 5.4375 21.1947 5.1875 20.4738C5.04687 20.1054 4.4375 18.9679 3.90625 18.6636C3.46875 18.4232 2.84375 17.8305 3.89062 17.8145C4.875 17.7985 5.57812 18.7437 5.8125 19.1281C6.9375 21.0666 8.73437 20.5219 9.45312 20.1855C9.5625 19.3524 9.89062 18.7917 10.25 18.4713C7.46875 18.1509 4.5625 17.0455 4.5625 12.1433C4.5625 10.7496 5.04687 9.59611 5.84375 8.69898C5.71875 8.37857 5.28125 7.06492 5.96875 5.30269C5.96875 5.30269 7.01562 4.96627 9.40625 6.61635C10.4062 6.32799 11.4687 6.1838 12.5312 6.1838C13.5937 6.1838 14.6562 6.32799 15.6562 6.61635C18.0469 4.95025 19.0937 5.30269 19.0937 5.30269C19.7812 7.06492 19.3438 8.37857 19.2188 8.69898C20.0156 9.59611 20.5 10.7335 20.5 12.1433C20.5 17.0615 17.5781 18.1509 14.7969 18.4713C15.25 18.8718 15.6406 19.6408 15.6406 20.8423C15.6406 22.5565 15.625 23.9342 15.625 24.3667C15.625 24.7032 15.8594 25.1037 16.4844 24.9755C18.9658 24.1165 21.1221 22.4814 22.6496 20.3001C24.1772 18.1189 24.9993 15.5015 25 12.8162C25 5.73524 19.4062 0 12.5 0Z"
+											fill="#838080f3"
+										/>
+									</svg>
+								</a>
+								<a href="https://wordsapp.netlify.app/"
+									><svg
+										width="25"
+										height="15"
+										viewBox="0 0 35 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M17.045 17.0455C19.5554 17.0455 21.5904 15.0104 21.5904 12.5C21.5904 9.98966 19.5554 7.95459 17.045 7.95459C14.5346 7.95459 12.4995 9.98966 12.4995 12.5C12.4995 15.0104 14.5346 17.0455 17.045 17.0455Z"
+											fill="white"
+										/>
+										<path
+											d="M34.0222 12.1136C32.6857 8.65642 30.3654 5.66661 27.3481 3.51373C24.3309 1.36086 20.7489 0.139287 17.045 0C13.341 0.139287 9.75905 1.36086 6.74179 3.51373C3.72453 5.66661 1.40424 8.65642 0.0676984 12.1136C-0.0225661 12.3633 -0.0225661 12.6367 0.0676984 12.8864C1.40424 16.3436 3.72453 19.3334 6.74179 21.4863C9.75905 23.6391 13.341 24.8607 17.045 25C20.7489 24.8607 24.3309 23.6391 27.3481 21.4863C30.3654 19.3334 32.6857 16.3436 34.0222 12.8864C34.1125 12.6367 34.1125 12.3633 34.0222 12.1136V12.1136ZM17.045 19.8864C15.5841 19.8864 14.156 19.4532 12.9413 18.6415C11.7266 17.8299 10.7799 16.6763 10.2209 15.3266C9.6618 13.977 9.51553 12.4918 9.80053 11.059C10.0855 9.62618 10.789 8.31005 11.822 7.27705C12.855 6.24405 14.1711 5.54057 15.604 5.25556C17.0368 4.97056 18.5219 5.11683 19.8716 5.67589C21.2213 6.23495 22.3749 7.18168 23.1865 8.39636C23.9981 9.61104 24.4313 11.0391 24.4313 12.5C24.4283 14.4581 23.6492 16.3351 22.2646 17.7196C20.88 19.1042 19.003 19.8834 17.045 19.8864V19.8864Z"
+											fill="#838080f3"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
 						<a href="https://wordsapp.netlify.app/" class="link"
 							>https://wordsapp.netlify.app/</a
 						>
-						<p>
-							Aplikacja działa jak słownik do nauki angielskich słówek. Jest
-							połączona z zewnętrznym API. Słówka są zapisywane w ‘localstorage’
-							przeglądarki ( w przyszłości zaimplementuje bazę danych). Aplikacj
-							tłumaczy oraz odtwarza wymowe, można stworzyć swoje własne słowa
-							lub całe treści czyli można zapisywać notatki, tworzyć grupy oraz
-							drukować w dwóch wystylizowanych listach na drukarce. Zbudowana w
-							JavaScript w oparciu o schemat MVC.
-						</p>
+						<span class="skills"><small>JavaScirpt</small> </span>
+						<!-- <p>
+							Aplikacja połączona z zewnętrznym API działa jak słownik do nauki angielskich słówek.
+						</p> -->
 					</article>
 					<article class="project">
-						<h4>portfolio</h4>
+						<div class="project__box">
+							<div class="project__title">
+								<h4>portfolio</h4>
+							</div>
+							<div class="project__icons">
+								<a href="https://github.com/gregsypek/portfolio2">
+									<svg
+										width="15"
+										height="15"
+										viewBox="0 0 25 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M12.5 0C5.59375 0 0 5.73524 0 12.8162C0 18.4873 3.57812 23.2774 8.54687 24.9755C9.17187 25.0877 9.40625 24.7032 9.40625 24.3667C9.40625 24.0624 9.39062 23.0531 9.39062 21.9797C6.25 22.5725 5.4375 21.1947 5.1875 20.4738C5.04687 20.1054 4.4375 18.9679 3.90625 18.6636C3.46875 18.4232 2.84375 17.8305 3.89062 17.8145C4.875 17.7985 5.57812 18.7437 5.8125 19.1281C6.9375 21.0666 8.73437 20.5219 9.45312 20.1855C9.5625 19.3524 9.89062 18.7917 10.25 18.4713C7.46875 18.1509 4.5625 17.0455 4.5625 12.1433C4.5625 10.7496 5.04687 9.59611 5.84375 8.69898C5.71875 8.37857 5.28125 7.06492 5.96875 5.30269C5.96875 5.30269 7.01562 4.96627 9.40625 6.61635C10.4062 6.32799 11.4687 6.1838 12.5312 6.1838C13.5937 6.1838 14.6562 6.32799 15.6562 6.61635C18.0469 4.95025 19.0937 5.30269 19.0937 5.30269C19.7812 7.06492 19.3438 8.37857 19.2188 8.69898C20.0156 9.59611 20.5 10.7335 20.5 12.1433C20.5 17.0615 17.5781 18.1509 14.7969 18.4713C15.25 18.8718 15.6406 19.6408 15.6406 20.8423C15.6406 22.5565 15.625 23.9342 15.625 24.3667C15.625 24.7032 15.8594 25.1037 16.4844 24.9755C18.9658 24.1165 21.1221 22.4814 22.6496 20.3001C24.1772 18.1189 24.9993 15.5015 25 12.8162C25 5.73524 19.4062 0 12.5 0Z"
+											fill="#838080f3"
+										/>
+									</svg>
+								</a>
+								<a href="https://portfolio-gregsypek.netlify.app/"
+									><svg
+										width="25"
+										height="15"
+										viewBox="0 0 35 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M17.045 17.0455C19.5554 17.0455 21.5904 15.0104 21.5904 12.5C21.5904 9.98966 19.5554 7.95459 17.045 7.95459C14.5346 7.95459 12.4995 9.98966 12.4995 12.5C12.4995 15.0104 14.5346 17.0455 17.045 17.0455Z"
+											fill="white"
+										/>
+										<path
+											d="M34.0222 12.1136C32.6857 8.65642 30.3654 5.66661 27.3481 3.51373C24.3309 1.36086 20.7489 0.139287 17.045 0C13.341 0.139287 9.75905 1.36086 6.74179 3.51373C3.72453 5.66661 1.40424 8.65642 0.0676984 12.1136C-0.0225661 12.3633 -0.0225661 12.6367 0.0676984 12.8864C1.40424 16.3436 3.72453 19.3334 6.74179 21.4863C9.75905 23.6391 13.341 24.8607 17.045 25C20.7489 24.8607 24.3309 23.6391 27.3481 21.4863C30.3654 19.3334 32.6857 16.3436 34.0222 12.8864C34.1125 12.6367 34.1125 12.3633 34.0222 12.1136V12.1136ZM17.045 19.8864C15.5841 19.8864 14.156 19.4532 12.9413 18.6415C11.7266 17.8299 10.7799 16.6763 10.2209 15.3266C9.6618 13.977 9.51553 12.4918 9.80053 11.059C10.0855 9.62618 10.789 8.31005 11.822 7.27705C12.855 6.24405 14.1711 5.54057 15.604 5.25556C17.0368 4.97056 18.5219 5.11683 19.8716 5.67589C21.2213 6.23495 22.3749 7.18168 23.1865 8.39636C23.9981 9.61104 24.4313 11.0391 24.4313 12.5C24.4283 14.4581 23.6492 16.3351 22.2646 17.7196C20.88 19.1042 19.003 19.8834 17.045 19.8864V19.8864Z"
+											fill="#838080f3"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
 						<a href="https://portfolio-gregsypek.netlify.app/" class="link"
 							>https://portfolio-gregsypek.netlify.app/</a
 						>
-						<p>
-							Osobiste portfolio napisane w REACT umożliwiające podgląd moich
+						<span class="skills"><small>React</small> </span>
+						<!-- <p>
+							Osobiste portfolio umożliwiające podgląd moich
 							projektów oraz zawierające kilka słów o mnie.
-						</p>
+						</p> -->
+					</article>
+				</div>
+				<div class="projects">
+					<header class="header header-color">
+						<h3>Edukacja</h3>
+					</header>
+					<article class="project">
+						<h4>
+							CENTRUM KSZTAŁCENIA PRAKTYCZNEGO I DOSKONALENIA NAUCZYCIELI W
+							MIELCU
+						</h4>
+						<span class="link">technik informatyk</span>
+						<small style="display: block"
+							>październik 2018 - październik 2019</small
+						>
+					</article>
+					<article class="project">
+						<h4>WYZSZA SZKOLA GOSPODARKI I ZARZĄDZANIA W MIELCU</h4>
+						<span class="link">tytuł licencjata z ekonomii</span>
+						<small style="display: block">wrzesień 2004 - lipiec 2007</small>
 					</article>
 				</div>
 			</section>
