@@ -200,69 +200,6 @@
 				margin-right: 0.5rem;
 				background-color: rgb(229 229 229 / 50%);
 			}
-
-			/* Stylizacja akordianu */
-
-			.accordion {
-				/* max-width: 300px;
-				 */
-				/* margin: 50px auto; */
-				width: 100%;
-
-				position: relative;
-			}
-
-			.accordion input {
-				display: none; /* Ukrycie standardowego inputa */
-			}
-			.accordion h4 {
-				color: black;
-			}
-
-			.accordion label {
-				position: absolute;
-
-				top: 0;
-				right: 10px;
-				height: 16px;
-			}
-			.accordion .work-details {
-				padding: 2px 0 2px 0;
-			}
-			.accordion .work-timeline {
-				padding: 2px 0 2px 0;
-			}
-
-			.icon {
-				fill: #838080f3;
-			}
-			.icon:hover {
-				cursor: pointer;
-			}
-
-			.accordion label:hover {
-				border: 1px solid black;
-			}
-
-			.accordion input:checked + label {
-				transform: rotate(180deg);
-			}
-
-			.accordion div {
-				display: none;
-				padding: 10px;
-				/* border-top: 1px solid #ccc; */
-			}
-
-			.accordion input:checked + label + div {
-				display: block;
-			}
-			.accordion input + label + .work-details + .work-timeline {
-				display: block;
-			}
-			.accordion input:checked + label + .work-details + .work-timeline {
-				display: none;
-			}
 		</style>
 	</head>
 	<body>
@@ -345,122 +282,26 @@
 					<header class="header header-color">
 						<h3>Doświadczenie</h3>
 					</header>
-					<article class="employer">
-						<div class="accordion">
-							<h4>SOLVE-NET</h4>
-							<input type="checkbox" id="employer1" class="employer-details" />
-							<label for="employer1">
-								<svg
-									class="icon"
-									xmlns="http://www.w3.org/2000/svg"
-									width="16"
-									height="16"
-									fill="currentColor"
-									class="bi bi-chevron-down"
-									viewBox="0 0 16 16"
-								>
-									<path d="M1 5l7 7 7-7H1z" />
-								</svg>
-							</label>
-							<div class="work-details">
-								<p>
-									Byłem kluczowym członkiem zespołu deweloperskiego, gdzie
-									specjalizowałem się w technologiach takich jak
-									<strong>React, React Native, TypeScript i Node.js</strong>.
-									Odpowiadałem za rozwijanie i ulepszanie istniejącej aplikacji
-									mobilnej dla branży budowlanej poprzez dodawanie nowych
-									funkcji i optymalizację istniejących. Dodatkowo, napisałem
-									program w terminalu przy użyciu Node.js umożliwiający obsługę
-									tłumaczeń językowych. Miałem okazję korzystać z narzędzi
-									takich jak <strong>Redmine</strong> do skutecznego zarządzania
-									projektami. Moje doświadczenie w firmie SOLVE-NET wzbogaciło
-									moje umiejętności i umożliwiło mi zdobycie wiedzy na temat
-									efektywnego rozwoju projektów.
-								</p>
-							</div>
-							<div class="work-timeline">
-								<span class="link">czerwiec 2023 - obecnie</span>
-								<small style="display: block"
-									>programista aplikacji - React, React-Native, Typescript,
-									Node, OOP</small
-								>
-							</div>
-						</div>
+					<article class="project">
+						<h4>SOLVE-NET</h4>
+						<span class="link">czerwiec 2023 - obecnie</span>
+						<small style="display: block"
+							>programista aplikacji - React Native, Typescript</small
+						>
 					</article>
-					<article class="employer">
-						<div class="accordion">
-							<h4>ZETO-RZESZÓW sp. z o.o.</h4>
-							<input type="checkbox" id="employer2" class="employer-details" />
-							<label for="employer2">
-								<svg
-									class="icon"
-									xmlns="http://www.w3.org/2000/svg"
-									width="16"
-									height="16"
-									fill="currentColor"
-									class="bi bi-chevron-down"
-									viewBox="0 0 16 16"
-								>
-									<path d="M1 5l7 7 7-7H1z" />
-								</svg>
-							</label>
-							<div class="work-details">
-								<p>
-									Miałem przyjemność pracować nad rozbudowaną aplikacją typu
-									marketplace, wykorzystując <strong>Vue.js </strong>i
-									<strong>Next.js</strong>. Korzystałem równieź z narzędzi do
-									zarządzania projektem, takich jak
-									<strong>Azure DevOps</strong> czy <strong>Redmine</strong>.
-									Uczestniczyłem w procesie zespołowej pracy, współpracując
-									zarówno z frontendowcami, jak i backendowcami. Naszym głównym
-									celem było wdrażanie poprawek, optymalizacja oraz rozwijanie
-									funkcjonalności platformy, co znacząco przyczyniło się do
-									doskonalenia produktu..
-								</p>
-							</div>
-
-							<div class="work-timeline">
-								<span class="link">kwiecien 2022 - wrzesień 2022</span>
-								<small style="display: block"
-									>młodszy programista aplikacji - Vue, NuxtJS</small
-								>
-							</div>
-						</div>
+					<article class="project">
+						<h4>ZETO-RZESZÓW sp. z o.o.</h4>
+						<span class="link">kwiecien 2022 - wrzesień 2022</span>
+						<small style="display: block"
+							>młodszy programista aplikacji - Vue, NuxtJS</small
+						>
 					</article>
-					<article class="employer">
-						<div class="accordion">
-							<h4>PERBIS-DĘBICA</h4>
-							<input type="checkbox" id="employer3" class="employer-details" />
-							<label for="employer3">
-								<svg
-									class="icon"
-									xmlns="http://www.w3.org/2000/svg"
-									width="16"
-									height="16"
-									fill="currentColor"
-									class="bi bi-chevron-down"
-									viewBox="0 0 16 16"
-								>
-									<path d="M1 5l7 7 7-7H1z" />
-								</svg>
-							</label>
-							<div class="work-details">
-								<p>
-									Miałem okazję pracować nad projektami w
-									<strong>WordPress</strong>, gdzie skupiałem się na wdrażaniu
-									gotowych layoutów na platformę WordPress. Moje obowiązki
-									obejmowały budowę dynamicznego kontentu, dostosowywanie
-									projektów do potrzeb klienta oraz zapewnianie funkcjonalności
-									zgodnych z najnowszymi standardami.
-								</p>
-							</div>
-							<div class="work-timeline">
-								<span class="link">styczeń 2022 - luty 2022</span>
-								<small style="display: block"
-									>programista aplikacji - Wordpress</small
-								>
-							</div>
-						</div>
+					<article class="project">
+						<h4>PERBIS-DĘBICA</h4>
+						<span class="link">styczeń 2022 - luty 2022</span>
+						<small style="display: block"
+							>programista aplikacji - Wordpress</small
+						>
 					</article>
 				</div>
 				<div class="projects">
@@ -928,29 +769,5 @@
 				</blockquote>
 			</footer>
 		</div>
-		<script>
-			const allSections = document.querySelectorAll(".employer-details");
-			const allArticles = document.querySelectorAll(
-				".employer:not(:first-child)"
-			);
-
-			allSections.forEach((section, index) => {
-				section.addEventListener("change", function () {
-					if (this.checked) {
-						// Schowaj pozostałe artykuły
-						allArticles.forEach((article, articleIndex) => {
-							if (index !== articleIndex) {
-								article.style.display = "none";
-							}
-						});
-					} else {
-						// Pokaż pozostałe artykuły
-						allArticles.forEach((article) => {
-							article.style.display = "block";
-						});
-					}
-				});
-			});
-		</script>
 	</body>
 </html>
