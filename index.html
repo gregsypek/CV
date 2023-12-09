@@ -4,12 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>CV</title>
+		<title>Grzegorz Sypek CV</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
 			rel="stylesheet"
+		/>
+		<!-- Toastify CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
 		/>
 		<!-- <link rel="stylesheet" href="style.css" /> -->
 		<style>
@@ -298,6 +303,10 @@
 			.accordion .project-tools {
 				padding: 0;
 			}
+			.accordion .project-tools a {
+				text-decoration: none;
+			}
+
 			.accordion .project-details p {
 				padding-block: 10px;
 			}
@@ -307,6 +316,20 @@
 				.icon {
 					display: none;
 				}
+				.toastify {
+					display: none !important;
+				}
+			}
+
+			.toastify {
+				box-shadow: none !important;
+				color: black !important;
+			}
+			.toast-close {
+				color: black !important;
+			}
+			button.print:hover .print-icon {
+				fill: 4CAF50;
 			}
 
 			/* Dodane style dla projektów */
@@ -1046,6 +1069,26 @@
 					}
 				});
 			});
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+		<script>
+			function showToast() {
+				const toast = Toastify({
+					text: "Dokument jest teraz gotowy do drukowania!",
+					duration: 5000,
+					gravity: "top",
+					position: "right",
+					stopOnFocus: true,
+					className: "toast-printer",
+					close: true,
+					backgroundColor: "linear-gradient(to right, #E5E5E5, #D5D5D5)",
+					onClick: function () {
+						window.print();
+					},
+				}).showToast();
+			}
+
+			setTimeout(showToast, 3000);
 		</script>
 	</body>
 </html>
