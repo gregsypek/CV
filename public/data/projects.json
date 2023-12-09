@@ -1,0 +1,9 @@
+[
+	{
+		"name": "pizzarella",
+		"webLink": "https://pizzarella.netlify.app/",
+		"gitLink": "https://github.com/gregsypek/pizzarella",
+		"des": "Aplikacja stworzona w React z wykorzystaniem React Router, Tailwind CSS i Redux. Menu ładowane dynamicznie z użyciem API. Stan zarządzany za pomocą Redux Toolkit, a operacje asynchroniczne obsługiwane przy użyciu Redux Thunks. Dodatkowo, wykorzystałem hooka useFetcher do obsługi żądań do API oraz zaimplementowałem ładowacze (loaders) dla lepszej obsługi stanu ładowania.",
+		"skills": ["React", "Tailwind", "Redux"]
+	}
+]
