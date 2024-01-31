@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CV</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- <link rel="stylesheet" href="style.css" /> -->
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			html {
+				/* font-size: 62.5%; */
+				font-size: 78%;
+			}
+
+			body {
+				--bg-color: #f8f8f8;
+				--shade-color: #e5e5e5;
+				--font: "Poppins", sans-serif;
+				/* background-color: var(--bg-color); */
+				font-family: var(--font);
+			}
+
+			.wrapper {
+				position: relative;
+				display: flex;
+				gap: 4rem;
+				width: 794px;
+				height: 1090px;
+				margin: 0 auto;
+			}
+
+			a:link,
+			a:visited {
+				padding: 0.1rem;
+				border: 1px solid transparent;
+			}
+			a:hover,
+			a:active {
+				border: 1px solid black;
+			}
+			.left {
+				margin-top: 1.5rem;
+				flex-basis: 23.3rem;
+				margin-left: 2rem;
+				height: 100%;
+				background-color: var(--shade-color);
+				/* border: 1px solid orangered; */
+			}
+			.box,
+			.avatar {
+				margin: 0 1.5rem;
+			}
+			.col {
+				width: 100%;
+				height: 100%;
+				/* display: flex; */
+				/* flex-direction: column; */
+			}
+			.right {
+				flex: 1;
+				margin-right: 2.5rem;
+				padding-top: 1.5rem;
+			}
+
+			h1.title {
+				font-size: 1.8rem;
+				text-transform: uppercase;
+				font-weight: 500;
+				margin: 1.1rem 0;
+			}
+			img {
+				display: block;
+				width: 100%;
+				height: 12.6rem;
+				object-fit: cover;
+				filter: brightness(1.3);
+			}
+
+			.header-white,
+			.header-color {
+				border: 1px solid black;
+				/* width: 185px; */
+				width: 100%;
+				text-transform: uppercase;
+				font-size: 1.3rem;
+				font-weight: 500;
+				line-height: 1.8rem;
+				margin: 1.5rem auto;
+			}
+			.header-color {
+				background-color: var(--shade-color);
+			}
+			.header-white {
+				background-color: var(--bg-color);
+			}
+			.header-white h3,
+			.header-color h3 {
+				display: inline-block;
+				margin-left: 0.5rem;
+			}
+			.title {
+				font-size: 1.1rem;
+				line-height: 1.3rem;
+				letter-spacing: -0.02em;
+				margin: 1.2rem 0;
+				text-transform: none;
+				font-weight: 400;
+			}
+			address {
+				font-style: normal;
+			}
+			.title a,
+			.project a {
+				color: inherit;
+				text-decoration: none;
+				text-transform: lowercase;
+			}
+			.title h4 {
+				margin: 5px 0;
+				font-size: 1.1rem;
+				font-weight: 500;
+				letter-spacing: -0.03em;
+				text-transform: lowercase;
+			}
+
+			p,
+			li {
+				font-size: 1rem;
+				font-weight: 400;
+			}
+
+			ul {
+				list-style: none;
+				margin: 0;
+			}
+			/* RIGHT */
+
+			h2 {
+				font-size: 1rem;
+				line-height: 1.6rem;
+				font-weight: 400;
+				margin: 0 0 1.4rem 0;
+			}
+
+			footer {
+				position: absolute;
+				bottom: -1rem;
+				left: 2.5rem;
+				right: 1rem;
+			}
+			blockquote {
+				font-size: 0.8rem;
+				margin: 0.2rem 1.5rem;
+				line-height: 1.2rem;
+			}
+			.project__box {
+				display: flex;
+				margin-right: 1.5rem;
+				justify-content: space-between;
+				border-bottom: 1px solid var(--shade-color);
+			}
+			.project__icons {
+				display: flex;
+				place-items: center;
+			}
+
+			.project h4 {
+				font-size: 1.1rem;
+				font-weight: 500;
+				letter-spacing: -0.02em;
+				line-height: 1.8rem;
+			}
+			.project a {
+				font-size: 0.9rem;
+				/* padding: 1.5rem 0; */
+			}
+			.project p {
+				font-size: 1rem;
+				margin-bottom: 1.3rem;
+				margin-top: 0.5rem;
+				line-height: 1.6rem;
+			}
+			.skills {
+				display: block;
+				margin-block: 0.2rem;
+			}
+			.skills small {
+				padding: 0 0.3rem;
+				margin-right: 0.5rem;
+				background-color: rgb(229 229 229 / 50%);
+			}
+			.experience {
+				padding-block: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<section class="left">
+				<div class="col">
+					<div class="avatar">
+						<h1 class="title">Grzegorz Sypek</h1>
+						<img src="./public/me.png" alt="my face" />
+					</div>
+					<div class="box personal-data">
+						<header class="header header-white">
+							<h3>Dane osobowe</h3>
+						</header>
+						<div class="title address">
+							<h4>adres</h4>
+
+							<address>Mielec, woj.podkarpackie</address>
+						</div>
+						<div class="title phone">
+							<h4>numer telefonu</h4>
+							<!-- <a href="504522440">504522440</a> -->
+							<a href="tel:504522440">504522440</a>
+						</div>
+						<div class="title linkedin">
+							<h4>linkedin</h4>
+							<a href="https://www.linkedin.com/in/grzegorz-sypek-47472a194/"
+								>https://www.linkedin.com/in/grzegorz-sypek-47472a194/</a
+							>
+						</div>
+						<div class="title email">
+							<h4>email</h4>
+							<a href="mailto:greg.sypek@gmail.com">greg.sypek@gmail.com</a>
+						</div>
+					</div>
+					<div class="box skills">
+						<header class="header header-white">
+							<h3>Kursy</h3>
+						</header>
+						<p class="experience">
+							Tworzenie aplikacji internetowych i baz danych (kurs E14 - technik
+							informatyk) - 2019r.
+						</p>
+
+						<p class="experience">
+							Angielski dla zaawansowanych (ESKK) - 2018r.
+						</p>
+
+						<!-- <p>Kurs wózka widłowego - 2009r.</p> -->
+					</div>
+
+					<div class="box languages">
+						<header class="header header-white">
+							<h3>Języki obce</h3>
+						</header>
+						<ul>
+							<li>angielski - <span>B2</span></li>
+							<li>rosyjski - <span>A2</span></li>
+						</ul>
+					</div>
+					<div class="box hobby">
+						<header class="header header-white">
+							<h3>Infrmacje dodatkowe</h3>
+						</header>
+						<ul>
+							<li style="padding-block: 5px">
+								* Pasjonuje się programowaniem w językach powiązanych z
+								tworzeniem stron internetowych,
+							</li>
+							<li style="padding-block: 5px">
+								* Jestem fanem rocka progresywnego oraz literatury faktu
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="right">
+				<div class="projects">
+					<article class="project">
+						<!-- Jestem ambitnym kandydatem z doświadczeniem w obszarze obsługi
+						klienta dla których tworzyłem strony internetowe. Moje umiejętności
+						obejmują biegłą obsługę komputera oraz praktyczne doświadczenie w
+						pracy biurowej. Posiadam również doświadczenie w efektywnej pracy
+						biurowej i zespołowej. Z determinacją podchodzę do wykonywania
+						zleceń, a moje umiejętności komunikacyjne pozwalają na skuteczną
+						interakcję zarówno z klientami, jak i zespołem. -->
+						Jestem ambitnym kandydatem z doświadczeniem w obszarze obsługi
+						klienta, posiadającym zaawansowane umiejętności obsługi komputera i
+						praktyczne doświadczenie w pracy biurowej. Moje kompetencje obejmują
+						skuteczną pracę zarówno indywidualną, jak i zespołową. Posiadam
+						wyższe wykształcenie oraz bardzo dobrą znajomość języka
+						angielskiego. Z determinacją podchodzę do wykonywania zadań, a moje
+						umiejętności komunikacyjne pozwalają na efektywną interakcję z
+						klientami i zespołem.
+					</article>
+				</div>
+				<div class="projects">
+					<header class="header header-color">
+						<h3>Doświadczenie</h3>
+					</header>
+
+					<article class="project experience">
+						<h4>SOLVE-NET - MIELEC</h4>
+						<span class="link">czerwiec 2023 - styczeń 2024</span>
+						<small style="display: block">programista aplikacji </small>
+						<small>
+							Rozwój i ulepszanie aplikacji mobilnej z branży budowlanej</small
+						>
+					</article>
+					<!-- <article class="project experience">
+						<h4>KIRCHHOFF - MIELEC</h4>
+						<span class="link">październik 2022 - kwiecień 2023</span>
+						<small style="display: block">operator pras / zgrzewarek </small>
+						<small>Wykonywanie prac zleconych i obsługa maszyn</small>
+					</article> -->
+					<article class="project experience">
+						<h4>ZETO - RZESZÓW</h4>
+						<span class="link">kwiecien 2022 - wrzesień 2022</span>
+						<small style="display: block">młodszy programista aplikacji</small>
+						<small
+							>Praca zespołowa przy tworzeniu dużej platformy typu
+							e-commerce</small
+						>
+					</article>
+					<article class="project experience">
+						<h4>SCHODYZALINSKI - TRZCIANA</h4>
+						<span class="link">październik 2020 - maj 2022</span>
+						<small style="display: block">stolarz</small>
+						<small>Montaż schodów drewnianych bezpośrednio u klienta</small>
+					</article>
+					<article class="project experience">
+						<h4>BURY - MIELEC</h4>
+						<span class="link">maj 2019 - maj 2020</span>
+						<small style="display: block">magazynier</small>
+						<small>Obsługa zamówień z wykorzystaniem terminalu</small>
+					</article>
+					<article class="project experience">
+						<h4>BLEK-MEBLE - MIELEC</h4>
+						<span class="link">maj 2014 - wrzesień 2018</span>
+						<small style="display: block">stolarz meblowy</small>
+						<small>Prace przy produkcji komponentów meblowych</small>
+					</article>
+				</div>
+
+				<div class="projects">
+					<header class="header header-color">
+						<h3>Edukacja</h3>
+					</header>
+					<article class="project">
+						<h4>
+							CENTRUM KSZTAŁCENIA PRAKTYCZNEGO I DOSKONALENIA NAUCZYCIELI W
+							MIELCU
+						</h4>
+						<span class="link">technik informatyk</span>
+						<small style="display: block"
+							>październik 2018 - październik 2019</small
+						>
+					</article>
+					<p>&nbsp;</p>
+					<article class="project">
+						<h4>WYŻSZA SZKOLA GOSPODARKI I ZARZĄDZANIA W MIELCU</h4>
+						<span class="link">tytuł licencjata z ekonomii</span>
+						<small style="display: block">wrzesień 2004 - lipiec 2007</small>
+					</article>
+				</div>
+				<!-- <div class="projects">
+					<header class="header header-color">
+						<h3>Informacje dodatkowe</h3>
+					</header>
+					<article class="project">
+						
+					</article>
+				</div> -->
+			</section>
+			<footer>
+				<blockquote>
+					Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb
+					niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem
+					Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016
+					r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych
+					osobowych i w sprawie swobodnego przepływu takich danych oraz
+					uchylenia dyrektywy 95/46/WE (RODO).
+				</blockquote>
+			</footer>
+		</div>
+	</body>
+</html>
