@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>CV</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -81,10 +82,11 @@
 			}
 			img {
 				display: block;
-				width: 100%;
-				height: 12.6rem;
+				width: 80%;
+				height: 10.6rem;
 				object-fit: cover;
 				filter: brightness(1.3);
+				margin: 0 auto;
 			}
 
 			.header-white,
@@ -203,6 +205,16 @@
 			.experience {
 				padding-block: 4px;
 			}
+			.job__title {
+				/* text-decoration: underline;
+				font-style: italic; */
+				border-bottom: 1px solid rgba(128, 128, 128, 0.259);
+				padding: 0 2px 0 2px;
+				color: #212226;
+			}
+			blockquote {
+				line-height: 1;
+			}
 		</style>
 	</head>
 	<body>
@@ -220,7 +232,7 @@
 						<div class="title address">
 							<h4>adres</h4>
 
-							<address>Mielec, woj.podkarpackie</address>
+							<address>Trzciana, 39-304 Czermin, woj.podkarpackie</address>
 						</div>
 						<div class="title phone">
 							<h4>numer telefonu</h4>
@@ -269,7 +281,10 @@
 						</header>
 						<article class="project">
 							<article class="project" style="display: flex">
-								<a href="https://gregsypek-p3.vercel.app/" class="link"
+								<a
+									href="https://gregsypek-p3.vercel.app/"
+									class="link"
+									style="text-decoration: underline"
 									>https://gregsypek-p3.vercel.app/</a
 								>
 								<!-- <p>
@@ -300,12 +315,13 @@
 					<article class="project">
 						Jestem ambitnym kandydatem z doświadczeniem w obszarze IT,
 						posiadającym zaawansowane umiejętności obsługi komputera i
-						praktyczne doświadczenie w pracy biurowej. Moje kompetencje obejmują
-						skuteczną pracę zarówno indywidualną, jak i zespołową. Posiadam
-						dyplom ukończenia kursu technik - informatyk, wyższe wykształcenie
-						oraz bardzo dobrą znajomość języka angielskiego. Z determinacją
-						podchodzę do wykonywania zadań, a moje umiejętności komunikacyjne
-						pozwalają na efektywną interakcję z klientami i zespołem.
+						praktyczne doświadczenie zarówno w pracy na produkcji jak i pracy
+						biurowej. Moje kompetencje obejmują skuteczną pracę zarówno
+						indywidualną, jak i zespołową. Posiadam dyplom ukończenia kursu
+						technik - informatyk, wyższe wykształcenie oraz bardzo dobrą
+						znajomość języka angielskiego. Z determinacją podchodzę do
+						wykonywania zadań, a moje umiejętności komunikacyjne pozwalają na
+						efektywną interakcję z klientami i zespołem.
 					</article>
 				</div>
 				<div class="projects">
@@ -316,9 +332,9 @@
 					<article class="project experience">
 						<h4>SOLVE-NET - MIELEC</h4>
 						<span class="link">czerwiec 2023 - styczeń 2024</span><br />
-						<small style="display: block"
-							>programista aplikacji - React, React-Native, Typescript, Node,
-							OOP</small
+						<small class="job__title" style="display: block">
+							<span>&#8680;</span> programista aplikacji - React, React-Native,
+							Typescript, Node</small
 						>
 						<small style="display: block; margin-top: 5px">
 							Rozwój i ulepszanie aplikacji mobilnej z branży budowlanej poprzez
@@ -328,8 +344,8 @@
 					<article class="project experience">
 						<h4>ZETO - RZESZÓW</h4>
 						<span class="link">kwiecień 2022 - wrzesień 2022</span>
-						<small style="display: block"
-							>młodszy programista aplikacji - Vue, NuxtJS
+						<small class="job__title" style="display: block"
+							><span>&#8680;</span> młodszy programista aplikacji - Vue, NuxtJS
 						</small>
 						<small style="display: block; margin-top: 5px"
 							>Praca zespołowa polegająca na budowaniu w pełni funkcjonalnej
@@ -340,12 +356,12 @@
 					<article class="project experience">
 						<h4>PERBIS - DĘBICA</h4>
 						<span class="link">styczeń 2022 - kwiecień 2022</span>
-						<small style="display: block"
-							>frontend developer - Wordpress
+						<small class="job__title" style="display: block">
+							<span>&#8680;</span> frontend developer - Wordpress
 						</small>
 						<small style="display: block; margin-top: 5px"
-							>Praca na umowie zlecenie - budowanie stron internetowych na
-							platformie WordPress w oparciu o projekt graficzny.
+							>Tworzenie stron internetowych w oparciu o własny projekt
+							graficzny.
 						</small>
 					</article>
 				</div>
@@ -365,22 +381,31 @@
 					</article> -->
 					<article class="project experience">
 						<h4>BURY - MIELEC</h4>
+						<span class="link">marzec 2024 - obecnie</span>
+						<small class="job__title" style="display: block"
+							><span>&#8680;</span> operator SMT
+						</small>
+						<small style="display: block"
+							>Praca na liniach przy produkcji płytek SMT</small
+						>
 						<span class="link">maj 2019 - maj 2020</span>
-						<small style="display: block">magazynier</small>
+						<small class="job__title" style="display: block">
+							<span>&#8680;</span> magazynier</small
+						>
 						<small
-							>Obsługa zamówień z wykorzystaniem terminalu mobilnego.
-							Kompletacja zleceń oraz dystrybucja materiału.
+							>Obsługa zamówień z wykorzystaniem terminalu mobilnego
 						</small>
 					</article>
 					<article class="project experience">
 						<h4>BRW - MIELEC</h4>
 						<span class="link">maj 2014 - wrzesień 2018, </span>
 						<span class="link">lipiec 2004 - grudzień 2010</span>
-						<small style="display: block">stolarz meblowy</small>
-						<small
-							>Prace przy produkcji komponentów meblowych, kontrola jakości,
-							wykonywanie elementów na podstawie rysunku technicznego</small
+						<small class="job__title" style="display: block"
+							><span>&#8680;</span> stolarz meblowy</small
 						>
+						<small
+							>Prace przy produkcji komponentów meblowych, kontrola jakości
+						</small>
 					</article>
 				</div>
 				<div class="projects">
