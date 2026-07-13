@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -578,13 +578,13 @@
 						<h3>Projekty</h3>
 					</header>
 
-					<!-- 1 bakery -->
+					<!-- 1 Invest Guard -->
 					<article class="project-code">
 						<div class="accordion">
 							<header class="project-header">
-								<h4>bakery</h4>
+								<h4>Invest Guard</h4>
 								<span class="project-icons">
-									<a href="https://github.com/gregsypek/bakery">
+									<a href="https://github.com/gregsypek/InvestGuard">
 										<svg
 											width="15"
 											height="15"
@@ -600,7 +600,7 @@
 											/>
 										</svg>
 									</a>
-									<a href="https://bakery-corp.netlify.app/"
+									<a href="https://invest-guard-blue.vercel.app/"
 										><svg
 											width="25"
 											height="15"
@@ -620,12 +620,13 @@
 									</a>
 								</span>
 							</header>
+							<!-- Zmieniony ID i atrybut FOR, aby uniknąć konfliktów w dokumencie -->
 							<input
 								type="checkbox"
-								id="project1"
+								id="project-investguard"
 								class="project-code-details"
 							/>
-							<label for="project1">
+							<label for="project-investguard">
 								<svg
 									class="icon"
 									xmlns="http://www.w3.org/2000/svg"
@@ -640,29 +641,35 @@
 							</label>
 							<div class="project-details">
 								<p>
-									Intuicyjny i nowoczesny system zarządzania piekarnią dostępny
-									online. Wykorzystuje technologie takie jak
+									Zaawansowana platforma typu "Premium Dashboard" do
+									kompleksowego planowania i zarządzania portfelem
+									inwestycyjnym. Zbudowana w architekturze full-stack z
+									wykorzystaniem
 									<strong
-										>React, Styled Components, React Router, React Icons, React
-										Query, React Hot Toast, React Hook Form, reCharts</strong
+										>Next.js, TypeScript, Tailwind CSS v4, Prisma
+										(PostgreSQL)</strong
 									>
-									oraz <strong>React Error Boundary</strong>. Aplikacja
-									umożliwia właścicielowi piekarni efektywne zarządzanie
-									zamówieniami, stanem produktów oraz ustawieniami aplikacji. Na
-									panelu sterowania użytkownik sprawdzi przegląd zamówień w
-									formie wykresów, obejmujących sprzedaż, kategorie, wskaźniki
-									postępu oraz aktywne zamówienia z bieżącego dnia.
+									oraz <strong>Recharts</strong>. Aplikacja umożliwia
+									inteligentne śledzenie docelowej i aktualnej alokacji
+									kapitału, wspierając zarówno tradycyjne giełdy i obligacje,
+									jak i aktywa alternatywne (np. nieruchomości, sztuka). Moduł
+									analityczny oferuje w pełni interaktywne wykresy z płynnymi
+									symulacjami strategii "w locie" oraz zautomatyzowane
+									wyliczanie odchyleń portfela, a wszystko to w estetycznym,
+									dopracowanym interfejsie wspierającym tryb ciemny (Dark Mode).
 								</p>
 							</div>
 							<div class="project-tools">
-								<a href="https://bakery-corp.netlify.app/" class="link"
-									>https://bakery-corp.netlify.app/</a
+								<a href="https://invest-guard-blue.vercel.app/" class="link"
+									>https://invest-guard-blue.vercel.app</a
 								>
-								<span class="skills"
-									><small>React</small><small>React Query</small>
-									<small>React Router</small
-									><small>Styled Components</small></span
-								>
+								<span class="skills">
+									<small>Next.js</small>
+									<small>TypeScript</small>
+									<small>Tailwind v4</small>
+									<small>Prisma</small>
+									<small>Recharts</small>
+								</span>
 							</div>
 						</div>
 					</article>
@@ -1124,7 +1131,7 @@
 			const allEmployersDetails =
 				document.querySelectorAll(".employer-details");
 			const allEmployers = document.querySelectorAll(
-				".employer:not(:first-child)"
+				".employer:not(:first-child)",
 			);
 
 			allEmployersDetails.forEach((section, index) => {
@@ -1146,10 +1153,10 @@
 			});
 			//PROJECTS
 			const allProjectDetails = document.querySelectorAll(
-				".project-code-details"
+				".project-code-details",
 			);
 			const allProjects = document.querySelectorAll(
-				".project-code:not(:first-child)"
+				".project-code:not(:first-child)",
 			);
 
 			allProjectDetails.forEach((section, index) => {
